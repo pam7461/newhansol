@@ -5,7 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>한솔제지</title>
     <style>
-        *{margin:0;border:none;padding:0;color:#333;}
+        /* css 리셋 */
+        *{margin:0;border:none;padding:0;color:#333;list-style:none;text-decoration:none;}
+
         .wrap{width:1200px;margin:0 auto 100px;}
         /* 헤더 */
         .header{height:100px;border-top:2px solid darkblue;overflow:hidden;}
@@ -17,14 +19,26 @@
         .rect_point_blue{width:12px;height:12px;margin-top:18px;background:darkblue;text-indent:-3000px;}
         .rect_point_green{width:12px;height:12px;margin-top:12px;background:darkgreen;text-indent:-3000px;}
         .main_logo_top_right{float:right;font-size:50px;font-weight:bolder;}
-        .main_logo_bottom{text-align:right;font-size:20px;font-weight:500;}
+        .main_logo_bottom{text-align:right;font-size:20px;font-weight:500;margin-top:-5px;}
 
         /* 메인 네비 */
-        .header_right{float:right;}
+        .header_right{float:right;overflow: hidden;}
+        .nav_top{margin-top:10px;float:right;}
+        .nav_top_list{display:inline-block;margin-left:20px;}
+        #instar{width:16px; height:16px;border-radius:8px;background:darkblue;text-indent:-3000px;}
+        #facebook{width:16px;height:16px;border-radius:8px;background:darkgreen;text-indent:-3000px;}
+        .nav_bottom{margin-top:50px;clear:both;}
+        .nav_bottom_list{display:inline-block;font-size:22px;font-weight:bolder;margin-left:40px;}
+
+        /* 베너섹션 */
         .banner{height:400px;background:rgba(255,0,0,0.2);}
+        /* 퀵메뉴섹션 */
         .quick_menu{height:150px;background:rgba(0,255,0, 0.2);}
+        /* 페이퍼섹션 */
         .papers{height:300px;background:rgba(0,0,255,0.2);}
+        /* 게시판 섹션 */
         .notice{height:300px;background:rgba(255,0,255,0.2);}
+        /* 푸터 섹션 */
         .footer{height:100px;background:rgba(255,255,0,0.2);}
 
 
@@ -47,7 +61,23 @@
                     한솔제지
                 </div>
             </div>
-            <div class="header_right main_nav">네비</div>
+            <div class="header_right main_nav">
+                <ul class="nav_top">
+                    <li class="nav_top_list"><a href="#">Home</a></li>
+                    <li class="nav_top_list"><a href="#">English</a></li>
+                    <li class="nav_top_list"><a href="#">Sitemap</a></li>
+                    <li class="nav_top_list"><a href="#">개인정보처리방침</a></li>
+                    <li class="nav_top_list" id="instar"><a href="#">인스타</a></li>
+                    <li class="nav_top_list" id="facebook"><a href="#">페이스북</a></li>
+                </ul>
+                <ul class="nav_bottom">
+                    <li class="nav_bottom_list"><a href="#">회사소개</a></li>
+                    <li class="nav_bottom_list"><a href="#">사업영역</a></li>
+                    <li class="nav_bottom_list"><a href="#">지속가능경영</a></li>
+                    <li class="nav_bottom_list"><a href="#">투자정보</a></li>
+                    <li class="nav_bottom_list"><a href="#">고객지원</a></li>
+                </ul>
+            </div>
         </div>
         <div class="banner"></div>
         <div class="quick_menu"></div>
