@@ -21,6 +21,16 @@
         /* cont CSS */
         .cont{padding:15px;background:#fff;overflow:hidden;}
         .cont_left{float:left;width:420px;}
+        form{}
+        .login_form{}
+        .form_txtbox{}
+        .input_txt{box-sizing:border-box;width:100%;margin-bottom:30px;border:1px solid gray;padding:10px;font-size:20px;}
+        .fl{overflow: hidden;}
+        .fl_left{float:left;}
+        .fl_right{float:right;color:darkmagenta;}
+        span{border:1px solid darkmagenta;}
+        .btn_sm{width:100%;height:50px;margin-top:30px;background:gray;text-align:center;color:#fff;font-size:24px;font-weight:bold;}
+
         .login_menu{width:280px;margin:20px auto;}
         .login_menu_list{display:inline-block;font-size:12px;border-right:1px solid black;padding:0 10px;}
         #last_list{border:none;}
@@ -41,25 +51,23 @@
             <li class="cont_left">
                 <form>
                     <ul class="login_form">
-                        <li>
-                            <input type="text" placeholder="아이디" required autofocus>
+                        <li class="form_txtbox">
+                            <input class="input_txt" type="text" placeholder="아이디" required autofocus>
+                        </li>
+                        <li class="form_txtbox">
+                            <input class="input_txt" type="password" placeholder="패스워드" required>
+                        </li>
+                        <li class="fl">
+                            <div class="fl_left">
+                                <input id="pass_chk" type="checkbox">
+                                <label for="pass_chk">비밀번호 저장</label>
+                            </div>
+                            <div class="fl_right">
+                                <p>휴대폰 간편로그인<span>광고</span></p>
+                            </div>
                         </li>
                         <li>
-                            <input type="pasword" placeholder="패스워드" required>
-                        </li>
-                        <li>
-                            <ul class="login_check">
-                                <li>
-                                    <input id="chkbox" type="checkbox">
-                                    <label for="chkbox">아이디 저장</label>
-                                </li>
-                                <li>
-                                    <p>휴대폰 간편 로그인<span>광고</span></p>
-                                </li>
-                            </ul>
-                        </li>
-                        <li>
-                            <input type="submit" value="로그인">
+                            <input class="btn_sm" type="submit" value="로그인">
                         </li>
                     </ul>
                 </form>
