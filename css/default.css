@@ -1,0 +1,27 @@
+@charset "utf-8";
+
+/* reset CSS */
+*{margin:0;border:none;padding:0;}
+ul{list-style:none;}
+body{background:gray;}
+.par{overflow:hidden;}
+.child_left{float:left;}
+.child_right{float:right;}
+/* wrap CSS */
+.wrap{width:900px;margin:20px auto;}
+/* tit CSS */
+.tit{padding:15px;background:#503396;}
+.tit_bar{font-size:20px;color:#fff}
+/* cont CSS */
+.cont{padding:15px;background:#fff;}
+.cont_list{width:420px;}
+.input_txt{box-sizing:border-box;width:100%;margin-bottom:30px;border:1px solid gray;padding:10px;font-size:20px;}
+.ease_login{color:darkmagenta;}
+span{border:1px solid darkmagenta;}
+.btn_sm{width:100%;height:50px;margin-top:30px;background:gray;text-align:center;color:#fff;font-size:24px;font-weight:bold;}
+.login_menu{width:280px;margin:20px auto;}
+.login_menu_list{display:inline-block;font-size:12px;border-right:1px solid black;padding:0 10px;}
+#last_list{border:none;}
+.login_sns{margin-bottom:20px;}
+.sns_list{width:25%;text-align:center;}
+.banner{width:100%;}
