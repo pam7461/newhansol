@@ -8,6 +8,7 @@
         /* reset CSS */
         *{margin:0;border:none;padding:0;}
         ul{list-style:none;}
+        body{background:gray;}
 
         /* wrap CSS */
         .wrap{width:900px;margin:20px auto;}
@@ -16,8 +17,18 @@
         .tit_bar{font-size:20px;color:#fff}
         .tit_left{float:left;}
         .tit_right{float:right;}
+        
         /* cont CSS */
-        .cont{}
+        .cont{padding:15px;background:#fff;overflow:hidden;}
+        .cont_left{float:left;width:420px;}
+        .login_menu{width:280px;margin:20px auto;}
+        .login_menu_list{display:inline-block;font-size:12px;border-right:1px solid black;padding:0 10px;}
+        #last_list{border:none;}
+        .login_sns{margin-bottom:20px;overflow:hidden;}
+        .sns_list{float:left;width:25%;text-align:center;}
+
+        .cont_right{float:right;width:420px;}
+        .banner{width:100%;}
     </style>
 </head>
 <body>
@@ -53,19 +64,19 @@
                     </ul>
                 </form>
                 <ul class="login_menu">
-                    <li>ID/PW찾기</li>
-                    <li>회원가입</li>
-                    <li>비회원 예매확인</li>
+                    <li class="login_menu_list">ID/PW찾기</li>
+                    <li class="login_menu_list">회원가입</li>
+                    <li class="login_menu_list" id="last_list">비회원 예매확인</li>
                 </ul>
                 <ul class="login_sns">
-                    <li><img src="images/ico-facebook.png" alt="facebook"></li>
-                    <li><img src="images/ico-kakao.png" alt="kakao"></li>
-                    <li><img src="images/ico-naver.png" alt="naver"></li>
-                    <li><img src="images/ico-payco.png" alt="payco"></li>
+                    <li class="sns_list"><img src="images/ico-facebook.png" alt="facebook"></li>
+                    <li class="sns_list"><img src="images/ico-kakao.png" alt="kakao"></li>
+                    <li class="sns_list"><img src="images/ico-naver.png" alt="naver"></li>
+                    <li class="sns_list"><img src="images/ico-payco.png" alt="payco"></li>
                 </ul>
             </li>
             <li class="cont_right">
-                <img src="images/login_banner.jpg" alt="배너">
+                <img class="banner" src="images/login_banner.jpg" alt="배너">
             </li>
         </ul>
     </div>
