@@ -10,10 +10,10 @@ body{background:gray;}
 /* wrap CSS */
 .wrap{width:900px;margin:20px auto;}
 /* tit CSS */
-header{padding:15px;background:#503396;}
+.tit{padding:15px;background:#503396;}
 .tit_bar{font-size:20px;color:#fff}
 /* cont CSS */
-section{padding:15px;background:#fff;}
+.cont{padding:15px;background:#fff;}
 .cont_list{width:420px;}
 .input_txt{box-sizing:border-box;width:100%;margin-bottom:30px;border:1px solid gray;padding:10px;font-size:20px;}
 .ease_login{color:darkmagenta;}
